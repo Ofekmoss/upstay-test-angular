@@ -1,0 +1,38 @@
+li {
+    display:block;
+    position:relative;
+    float:left;
+    text-align: center;
+}
+li a {
+    display:block;
+    padding:0;
+    text-decoration:none;
+    width:80px; 
+    line-height:35px; 
+    color: inherit;
+}
+
+li li a {
+    font-size:80%;
+} 
+
+li:hover {
+    background:#dfdcdc;
+}
+
+ul {
+    position:absolute;
+    padding:0;
+    left:0;
+    display:none; 
+    list-style: none;
+}
+
+li:hover ul ul {
+    display:none;
+}
+
+li:hover ul {
+    display:block;
+} 

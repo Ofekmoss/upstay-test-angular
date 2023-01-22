@@ -1,0 +1,38 @@
+.sub-header__container {
+    /* margin-top: 10px; */
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+li:hover {
+    background:#dfdcdc;
+}
+.sub-header__container,.sub-header__container li ul { 
+    padding:0px; 
+    list-style:none; 
+    width:80; 
+}
+.sub-header__container li,.sub-header__container li ul li { 
+    width:100%; 
+    position:relative; 
+    padding: 5px 0;
+}
+
+.sub-header__container li ul { 
+    display:none; 
+    position:absolute; 
+    left:100px; 
+    top:0px; 
+    width: 80px;
+}
+
+.sub-header__container li:hover ul { 
+    display:block; 
+}
+
+.deep-headers-list li{
+    padding: 5px 0;
+}

@@ -1,0 +1,9 @@
+<div class="menu-headers-list__container">
+    <ul class="headers-list">
+        <app-header 
+            class="app-header" 
+            *ngFor="let header of headersData | keyvalue" 
+            [header]="header">
+        </app-header>
+    </ul>
+</div>
