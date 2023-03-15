@@ -2,8 +2,9 @@
     <ul class="headers-list">
         <app-header 
             class="app-header" 
-            *ngFor="let header of headersData | keyvalue" 
+            *ngFor="let header of headersList" 
             [header]="header">
+            <!-- *ngFor="let header of headersData | keyvalue"  -->
         </app-header>
     </ul>
 </div>

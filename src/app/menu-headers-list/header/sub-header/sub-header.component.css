@@ -1,6 +1,3 @@
-.sub-header__container {
-    /* margin-top: 10px; */
-}
 
 a {
     color: inherit;
@@ -13,7 +10,6 @@ li:hover {
 .sub-header__container,.sub-header__container li ul { 
     padding:0px; 
     list-style:none; 
-    width:80; 
 }
 .sub-header__container li,.sub-header__container li ul li { 
     width:100%; 
@@ -21,18 +17,27 @@ li:hover {
     padding: 5px 0;
 }
 
-.sub-header__container li ul { 
+.deep-headers-list { 
     display:none; 
     position:absolute; 
-    left:100px; 
+    left:80px; 
     top:0px; 
     width: 80px;
 }
 
-.sub-header__container li:hover ul { 
+li:hover .deep-headers-list { 
+    display:block; 
+}
+
+.deep-headers-list app-sub-header li li { 
+    display:none; 
+}
+
+.deep-headers-list app-sub-header li:hover li { 
     display:block; 
 }
 
 .deep-headers-list li{
     padding: 5px 0;
 }
+

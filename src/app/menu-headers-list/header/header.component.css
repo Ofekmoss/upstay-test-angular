@@ -29,10 +29,18 @@ ul {
     list-style: none;
 }
 
-li:hover ul ul {
-    display:none;
+/* li:hover ul ul {
+    display:block;
+} */
+
+li:hover .sub-headers-list {
+    display:block;
 }
 
-li:hover ul {
-    display:block;
-} 
+/* li:hover .sub-headers-list app-sub-header li {
+    display:none;
+}  */
+
+.sub-header:hover li {
+    /* display: block; */
+}

@@ -1,7 +1,7 @@
 export class Header {
     constructor(
-        public header: string,
-        public subHeader: Header
+        public name: string,
+        public subHeader: []
     ) { 
     }
 }

@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { MenuHeadersListComponent } from './menu-headers-list/menu-headers-list.component';
 import { HeaderComponent } from './menu-headers-list/header/header.component';
 import { SubHeaderComponent } from './menu-headers-list/header/sub-header/sub-header.component';
+import { CardComponent } from './card/card.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuHeadersListComponent,
     HeaderComponent,
-    SubHeaderComponent
+    SubHeaderComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

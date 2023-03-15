@@ -1,13 +1,15 @@
 <div class="header__container">
     <li routerLinkActive="active">
-        <a routerLink="#">{{header.key}}</a>
+        <a routerLink="#">{{header.name}}</a>
         <ul 
             class="sub-headers-list"
-            *ngIf="header.value">
+            *ngIf="header.subHeader">
             <app-sub-header 
-                *ngFor="let subHeader of header.value | keyvalue" 
-                [subHeader]="subHeader">
+                *ngFor="let subHeader of header.subHeader" 
+                [subHeader]="subHeader"
+                class="sub-header">
             </app-sub-header>
+            <!-- *ngFor="let subHeader of header.value | keyvalue"  -->
         </ul>
     </li>
 </div>

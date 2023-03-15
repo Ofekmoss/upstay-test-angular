@@ -1,15 +1,20 @@
 <div class="sub-header__container">
     <li>
-        <a href="#">{{subHeader.key}}</a>
+        <a href="#">{{subHeaderName}}</a>
 
         <ul 
             class="deep-headers-list"
-            *ngIf="subHeader.value">
-            <li *ngFor="let deepHeader of subHeader.value | keyvalue">
+            *ngIf="deepHeadersList.length > 0">
+            <app-sub-header
+                *ngFor="let deepHeader of deepHeadersList" 
+                [subHeader]="deepHeader"
+                class="deep-header">
+            </app-sub-header>
+            <!-- <li *ngFor="let deepHeader of deepHeadersList">
                 <a href="#">
                     {{deepHeader.key}}
                 </a>
-            </li>
+            </li> -->
         </ul>
     </li>
 </div>

@@ -1,34 +1,107 @@
-{
-    "Home": null,
-    "Menu1": {
-        "Sub Menu 1": null,
-        "Sub Menu 2": null,
-        "Sub Menu 3": null,
-        "Sub Menu 4": {
-            "Deep Menu 1": {
-                "Sub Deep 1": null,
-                "Sub Deep 2": null,
-                "Sub Deep 3": null,
-                "Sub Deep 4": null
-            },
-            "Deep Menu 2": null
-        },
-        "Sub Menu 5": null
+[
+    {
+        "Home": null
     },
-    "Menu2": {
-        "Sub Menu 1": null,
-        "Sub Menu 2": null,
-        "Sub Menu 3": null
+    {
+        "Menu1": 
+            [
+                {
+                    "Sub Menu 1": null
+                }, 
+                {
+                    "Sub Menu 2": null
+                },
+                {
+                    "Sub Menu 3": null
+                },
+                {
+                    "Sub Menu 4": 
+                    [
+                        {
+                            "Deep Menu 1": 
+                                [
+                                    {
+                                        "Sub Deep 1": null
+                                    },
+                                    {
+                                        "Sub Deep 2": null
+                                    },
+                                    {
+                                        "Sub Deep 3": [
+                                            {
+                                                "Sub Deep 1": null
+                                            },
+                                            {
+                                                "Sub Deep 2": null
+                                            },
+                                            {
+                                                "Sub Deep 3": null
+                                            },
+                                            {
+                                                "Sub Deep 4": null
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Sub Deep 4": null
+                                    }
+                                ]
+                        },
+                        {
+                            "Deep Menu 2": null
+                        }
+                    ]
+                },
+                {
+                    "Sub Menu 5": null
+                }
+            ]
+        
     },
-    "Menu3": {
-        "Sub Menu 1": null,
-        "Sub Menu 2": {
-            "Deep Menu 1": null,
-            "Deep Menu 2": null,
-            "Deep Menu 3": null
-        },
-        "Sub Menu 3": null
+    {
+        "Menu2": 
+            [
+                {
+                    "Sub Menu 1": null
+                },
+                {
+                    "Sub Menu 2": null
+                },
+                {
+                    "Sub Menu 3": null
+                }
+            ]
+        
     },
-    "Menu4": null,
-    "Menu5": null
-}
+    {
+        "Menu3": 
+            [
+                {
+                    "Sub Menu 1": null
+                },
+                {
+                    "Sub Menu 2": 
+                        [
+                            {
+                                "Deep Menu 1": null
+                            },
+                            {
+                                "Deep Menu 2": null
+                            },
+                            {
+                                "Deep Menu 3": null
+                            }
+                        ]
+                },
+                {
+                    "Sub Menu 3": null
+                }
+            ]
+    },
+    {
+        "Menu4": null
+    },
+    {
+        "Menu5": null
+    }
+]
